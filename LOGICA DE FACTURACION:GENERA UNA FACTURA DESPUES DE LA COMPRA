@@ -1,0 +1,21 @@
+Algoritmo GenerarFactura
+    Definir producto Como Caracter
+    Definir precio, cantidad, total Como Real
+
+    Escribir "Ingrese el nombre del producto:"
+    Leer producto
+
+    Escribir "Ingrese el precio del producto:"
+    Leer precio
+
+    Escribir "Ingrese la cantidad:"
+    Leer cantidad
+
+    total <- precio * cantidad
+
+    Escribir "----- FACTURA HIPERMAXI -----"
+    Escribir "Producto: ", producto
+    Escribir "Precio: ", precio, " Bs"
+    Escribir "Cantidad: ", cantidad
+    Escribir "Total a pagar: ", total, " Bs"
+FinAlgoritmo
