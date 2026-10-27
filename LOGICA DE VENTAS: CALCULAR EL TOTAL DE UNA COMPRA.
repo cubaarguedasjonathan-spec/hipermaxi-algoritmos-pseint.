@@ -1,0 +1,13 @@
+Algoritmo CalculoVentas
+    Definir precio, cantidad, total Como Real
+
+    Escribir "Ingrese el precio del producto:"
+    Leer precio
+
+    Escribir "Ingrese la cantidad de productos:"
+    Leer cantidad
+
+    total <- precio * cantidad
+
+    Escribir "El total de la venta es: ", total, " Bs"
+FinAlgoritmo
