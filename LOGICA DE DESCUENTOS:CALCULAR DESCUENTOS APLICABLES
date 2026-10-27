@@ -1,0 +1,13 @@
+Algoritmo CalculoDescuento
+    Definir precio, descuento, total Como Real
+
+    Escribir "Ingrese el precio de la compra:"
+    Leer precio
+
+    Escribir "Ingrese el porcentaje de descuento:"
+    Leer descuento
+
+    total <- precio - (precio * descuento / 100)
+
+    Escribir "El total con descuento es: ", total, " Bs"
+FinAlgoritmo
