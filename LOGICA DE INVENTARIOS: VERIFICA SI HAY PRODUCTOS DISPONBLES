@@ -1,0 +1,17 @@
+Algoritmo ControlInventario
+    Definir stock, cantidad, restante Como Entero
+
+    Escribir "Ingrese el stock disponible:"
+    Leer stock
+
+    Escribir "Ingrese la cantidad solicitada:"
+    Leer cantidad
+
+    Si cantidad <= stock Entonces
+        restante <- stock - cantidad
+        Escribir "Compra realizada correctamente"
+        Escribir "Stock restante: ", restante
+    SiNo
+        Escribir "No hay suficiente stock"
+    FinSi
+FinAlgoritmo
