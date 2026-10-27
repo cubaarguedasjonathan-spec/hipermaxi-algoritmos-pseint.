@@ -1,0 +1,92 @@
+Algoritmo SistemaDeVentas
+    Definir producto Como Caracter
+    Definir precio, cantidad, total Como Real
+    Definir descuento, nuevoPrecio, totalDescuento Como Real
+    Definir stock, cantidadSolicitada, restante Como Entero
+    Definir opcion Como Entero
+	
+    Repetir
+        Escribir "SISTEMA DE VENTAS "
+        Escribir "1. Calcular total de compra"
+        Escribir "2. Verificar inventario"
+        Escribir "3. Actualizar precio"
+        Escribir "4. Calcular descuento"
+        Escribir "5. Generar factura"
+        Escribir "6. Salir"
+        Escribir "Elija una opcion:"
+        Leer opcion
+		
+        Segun opcion Hacer
+            1:
+                Escribir "Ingrese el precio del producto:"
+                Leer precio
+                Escribir "Ingrese la cantidad:"
+                Leer cantidad
+				
+                total <- precio * cantidad
+				
+                Escribir "Total de la compra: ", total, " Bs"
+				
+            2:
+                Escribir "Ingrese el stock disponible:"
+                Leer stock
+                Escribir "Ingrese la cantidad solicitada:"
+                Leer cantidadSolicitada
+				
+                Si cantidadSolicitada <= stock Entonces
+                    restante <- stock - cantidadSolicitada
+                    Escribir "Compra realizada correctamente"
+                    Escribir "Stock restante: ", restante
+                SiNo
+                    Escribir "No hay suficiente stock"
+                FinSi
+				
+            3:
+                Escribir "Ingrese el precio actual:"
+                Leer precio
+                Escribir "Ingrese el nuevo precio:"
+                Leer nuevoPrecio
+				
+                precio <- nuevoPrecio
+				
+                Escribir "Precio actualizado: ", precio, " Bs"
+				
+            4:
+                Escribir "Ingrese el precio de la compra:"
+                Leer precio
+                Escribir "Ingrese el porcentaje de descuento:"
+                Leer descuento
+				
+                totalDescuento <- precio - (precio * descuento / 100)
+				
+                Escribir "Total con descuento: ", totalDescuento, " Bs"
+				
+            5:
+                Escribir "Ingrese el nombre del producto:"
+                Leer producto
+                Escribir "Ingrese el precio del producto:"
+                Leer precio
+                Escribir "Ingrese la cantidad:"
+                Leer cantidad
+				
+                total <- precio * cantidad
+				
+                Escribir "===== FACTURA HIPERMAXI ====="
+                Escribir "Producto: ", producto
+                Escribir "Precio: ", precio, " Bs"
+                Escribir "Cantidad: ", cantidad
+                Escribir "Total a pagar: ", total, " Bs"
+				
+            6:
+                Escribir "Saliendo del sistema de ventas..."
+                Escribir "Gracias por utilizar el sistema."
+				
+            De Otro Modo:
+                Escribir "Opcion no valida"
+        FinSegun
+		
+        Escribir ""
+		
+    Hasta Que opcion = 6
+	
+FinAlgoritmo
