@@ -1,0 +1,13 @@
+Algoritmo ActualizarPrecios
+    Definir precioActual, nuevoPrecio Como Real
+
+    Escribir "Ingrese el precio actual:"
+    Leer precioActual
+
+    Escribir "Ingrese el nuevo precio:"
+    Leer nuevoPrecio
+
+    precioActual <- nuevoPrecio
+
+    Escribir "El precio actualizado es: ", precioActual, " Bs"
+FinAlgoritmo
